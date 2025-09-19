@@ -1,12 +1,14 @@
-#!/usr/bin/env -S python3
-a = input(" ").strip()
-b = input(" ").strip()
-words = b.split() 
-if a == " " or b == " ":
- print("none")
+#!/usr/bin/env python3
+import sys
+args = sys.argv[1:]
+if len(args) < 2:
+    print("none")
 else:
-  count = 0
-  for i in words:
-    if i == a:
-        count = count+1
-  print(count)
+    a = args[0].lower()
+    b = " ".join(args[1:]).lower()
+    words = b.split()
+    count = 0
+    for i in words:
+        if i == a:
+            count += 1
+    print(count)
