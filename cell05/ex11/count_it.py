@@ -1,9 +1,9 @@
-#!/usr/bin/env -S python3
-s = input("")  
-words = s.split() 
-if s == " ":
- print("none")
+#!/usr/bin/env python3
+import sys
+args = sys.argv[1:]
+if not args:
+    print("none")
 else:
-  print(f"parameters: {len(words)}")
-  for i in words:
-    print(f"{i} : {len(i)}")
+    print(f"parameters: {len(args)}")
+    for i in args:
+        print(f"{i} : {len(i)}")
