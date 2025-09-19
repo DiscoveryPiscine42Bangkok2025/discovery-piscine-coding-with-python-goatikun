@@ -5,4 +5,4 @@ if len(words) < 2:
     print("none")
 else:
     for w in reversed(words):
-        print(w, end=" ")
+        print(w, end = " ")
