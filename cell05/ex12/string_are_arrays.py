@@ -1,3 +1,4 @@
+#!/usr/bin/env -S python3
 a = str(input(" "))
 ans = ''
 if a == " ":
