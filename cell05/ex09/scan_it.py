@@ -1,3 +1,4 @@
+#!/usr/bin/env -S python3
 a = input(" ").strip()
 b = input(" ").strip()
 words = b.split() 
