@@ -1,15 +1,16 @@
 #!/usr/bin/env -S python3
-a = str(input(" "))
-ans = ''
-if a == " ":
-  print("none")
+#!/usr/bin/env python3
+import sys
+args = sys.argv[1:]
+if not args:
+    print("none")
 else:
-  count =  0
-  for i in a:
-    if i == 'z':
-        count = count+1
-        ans += 'z'
-  if count == 0:
-      print("none")
-  else:
-      print(ans)
+    a = " ".join(args)
+    ans = ''
+    for i in a:
+        if i == 'z':
+            ans += 'z'
+    if not ans:
+        print("none")
+    else:
+        print(ans)
