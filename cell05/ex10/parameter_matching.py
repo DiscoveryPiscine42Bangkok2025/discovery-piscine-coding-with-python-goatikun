@@ -1,10 +1,12 @@
-#!/usr/bin/env -S python3
-a = str(input(" "))
-if a == " ":
-  print("none")
+#!/usr/bin/env python3
+import sys
+args = sys.argv[1:]
+if not args:
+    print("none")
 else:
-  ans = str(input("What was the parameter? "))
-  if a == ans:
-    print("Good job!")
-  else:
-    print("Nope, sorry...")
+    a = args[0]
+    ans = input("What was the parameter? ")
+    if a == ans:
+        print("Good job!")
+    else:
+        print("Nope, sorry...")
