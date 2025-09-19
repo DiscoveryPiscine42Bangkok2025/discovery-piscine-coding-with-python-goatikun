@@ -1,12 +1,8 @@
-#!/usr/bin/env -S python3
-s = str(input("")) 
-words = s.split() 
-if s == " ":
- print("none")
-elif len(words) < 2:
-  print("none")
+#!/usr/bin/env python3
+import sys
+words = sys.argv[1:]
+if len(words) < 2:
+    print("none")
 else:
-  i = len(words)-1
-  for a in range(0,len(words)):
-    print(words[i],end = " ")
-    i = i-1
+    for w in reversed(words):
+        print(w, end=" ")
