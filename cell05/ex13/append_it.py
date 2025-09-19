@@ -1,10 +1,9 @@
-a = str(input(" "))
-if a == " ":
-  print("none")
+#!/usr/bin/env python3
+import sys
+args = sys.argv[1:]
+if not args:
+    print("none")
 else:
-  for i in a.split() :
-    if not i.endswith("ism"):
-        i = i+"ism"
-        print(i)
-    else:
-      continue
+    for i in args:
+        if not i.endswith("ism"):
+            print(i + "ism")
