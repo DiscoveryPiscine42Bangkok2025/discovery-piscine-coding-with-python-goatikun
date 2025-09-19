@@ -7,4 +7,4 @@ if not args:
     print("none")
 else:
     for a in args:
-        print(a.lower(), end=" ")
+        print(a.lower(), end =" ")
