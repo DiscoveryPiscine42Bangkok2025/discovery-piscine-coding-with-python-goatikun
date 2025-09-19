@@ -1,8 +1,10 @@
-#!/usr/bin/env -S python3
-s = str(input("")) 
-words = s.split()   
-if s == " ":
- print("none")
+#!/usr/bin/env python3
+import sys
+
+args = sys.argv[1:]
+
+if not args:
+    print("none")
 else:
-  for a in words:
-    print(a.lower(),end = " ")
+    for a in args:
+        print(a.lower(), end=" ")
