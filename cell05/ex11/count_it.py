@@ -1,3 +1,4 @@
+#!/usr/bin/env -S python3
 s = input("")  
 words = s.split() 
 if s == " ":
