@@ -1,3 +1,4 @@
+#!/usr/bin/env -S python3
 a = str(input(" "))
 if a == " ":
   print("none")
